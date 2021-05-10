@@ -1,0 +1,266 @@
+body{
+    font-family: 'Nixie One', cursive;
+    height: 100%;
+    background-image: url("/dist/images/bar.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #181d26;
+}
+
+.header{
+    background-color: #383040;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+
+.name{
+    font-family: 'UnifrakturCook', cursive;
+    color: #D9C8B4;
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-nav{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Nixie One', cursive;
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.button-nav .span{
+    cursor: pointer; 
+    display: inline-block;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.button-nav .span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-nav:hover .span{
+    padding-right: 12px;
+}
+
+.button-nav:hover .span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.active{
+  
+    color: #BF4163;
+}
+
+.footer{
+    background-color: #383040;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11pt;
+}
+
+.footerContent{
+    margin-left: 10px;
+}
+
+.link{
+    margin-right: 10px;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    background-color: rgba(56, 48, 64, 0.9);
+    color: white;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tagline{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.order{
+    text-align: center;
+    margin-top: -8px;
+}
+
+.orderButton{
+    background-color: #D98F4E;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    margin-top: -5px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition-duration: 0.4s;
+    font-family: 'Nixie One', cursive;
+    font-size: .8rem;
+}
+
+.orderButton:hover{
+    background-color: #BF6341;
+}
+
+.barInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.address{
+    margin-bottom: -5px;
+    display: flex;
+}
+
+.fas{
+  margin-left: 8px;
+  color: #BF4163;
+}
+
+.menu{
+    background-color: rgba(56, 48, 64, 0.9);
+    color: white;
+    margin-top: 135px;
+    margin-bottom: 60px;
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
+.foodLab{
+display: flex;
+flex-direction: row;
+justify-content: space-between;   
+border-bottom: 1px dotted #BF4163; 
+line-height: 0px;
+margin: 0px;
+}
+
+.foodLabel{
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 36pt;
+    text-align: center;
+    color: #BF4163;
+    margin-bottom: 5px;
+    
+}
+
+.foodPrice{
+    color: #D98F4E;
+}
+
+.foodName{
+    color: #D9C8B4;
+}
+
+.drinkLab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px dotted #BF4163;
+    line-height: 0px;
+    margin: 0px;
+}
+
+.drinkLabel{
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 36pt;
+    text-align: center;
+    color: #BF4163;
+    margin-bottom: 5px;
+}
+
+.drinkPrice{
+    color: #D98F4E;
+}
+
+.drinkName{
+    color: #D9C8B4;
+}
+
+.contact{
+    background-color: rgba(56, 48, 64, 0.9);
+    color: white;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
+.contactLabel{
+    color: #D9C8B4;
+    text-align: center;
+    border-bottom: 1px dotted #D98F4E;
+}
+
+.contactAddress{
+text-align: center;
+}
+
+.contactAddress2{
+    margin-bottom: 25px;
+}
+
+.hoursOpen{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.phoneNumber{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.email{
+    text-align: center;
+    margin-bottom: 25px;
+}
