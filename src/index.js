@@ -1,2 +1,3 @@
-import loadPage from './modules/initial-page-load';
+import initializeWebsite from './website';
 
+initializeWebsite();
